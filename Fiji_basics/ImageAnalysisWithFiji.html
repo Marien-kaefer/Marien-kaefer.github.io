@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Image Analysis with Fiji</title>
+<title>Image Analysis with Fiji - The Basics</title>
 <link rel="stylesheet" href="css/reveal.css">
 <link rel="stylesheet" href="css/theme/cci.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -34,68 +34,88 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <div class="slides">
 
 <section data-menu-title="Title">
-<h2>Image Analysis with Fiji - The Basics</h2>
-<h4>Marie Held PhD<br>Image Analysis at the <a target="_blank" href="https://cci.liv.ac.uk/"> Centre for Cell Imaging </a>, University of Liverpool</h4>
-<p class="subtle">Use <i class="fa fa-arrow-right"></i> to advance the slide</p>
-<!-- <p class="subtle">Use <i class="fa fa-chevron-circle-right"></i> to advance the slide</p> -->
+	<h2>Image Analysis with Fiji - The Basics</h2>
+	<h4>Marie Held PhD<br>Image Analysis at the <a target="_blank" href="https://cci.liv.ac.uk/"> Centre for Cell Imaging </a>, University of Liverpool</h4>
+	<p class="subtle">Use <i class="fa fa-arrow-right"></i> to advance the slide.</p>
+	<!-- <p class="subtle">Use <i class="fa fa-chevron-circle-right"></i> to advance the slide</p> -->
 </section>
 
 <section data-menu-title="Links and Resources" data-state="intro0"><style>.intro0 header:after { content: "Links and Resources"; }</style>
-<ul>
-<li>These slides: http://tiny.cc/cciworkshop <br>(redirects to https://pcwww.liv.ac.uk/~cci/ia.html)</li>	
-<ul><li>Navigation: arrow keys left and right to navigate</li><li>'m' key to get to navigation menu</li><li>Escape for slide overview</li></ul>
-<li>Where to find help after the workshop (links also available on the menu):</li>
-<ul><li><a target="_blank" href="https://imagej.net">ImageJ Website</a></li><li><a target="_blank" href="https://forum.imagej.net">Forum</a></li><li><a target="_blank" href="https://postacquisition.wordpress.com">Post-Acquisition (my blog)</a></li><li><a target="_blank" href="http://cci.liv.ac.uk/contact.html">The CCI</a></li></ul>
-</ul>
+	<ul>
+		<li>These slides: https://tinyurl.com/Fiji-basics </li>	
+		<ul>
+			<li>Navigation: arrow keys left and right to navigate</li><li>'m' key to get to navigation menu</li>
+			<li>Escape for slide overview</li>
+		</ul>
+		<li>Where to find help after the workshop (links also available on the menu):</li>
+		<ul>
+			<li><a target="_blank" href="https://imagej.net">ImageJ Website</a></li>
+			<li><a target="_blank" href="https://forum.image.sc/">Forum</a></li>
+			<li><a target="_blank" href="https://didyouknowimageanalysis.wordpress.com/">Did you know - image analysis style (my blog)</a></li>
+			<li><a target="_blank" href="http://cci.liv.ac.uk/contact.html">The CCI</a></li>
+		</ul>
+	</ul>
 </section>
 
 <section data-menu-title="Opening Test Data" data-state="fiji2a"><style>.fiji2a header:after { content: "Opening Test Data"; }</style>
-<p>Commands on the Fiji menu will look like: <code>[File > Save]</code></p>
-<p>Throughtout the presentation, test data will look like this: <a href="material/01-Photo.tif"><code>01-Photo.tif</code></a></p>
-<img data-fragment-index="1"  class="half fragment" src="img-ia/material_01.png"/>
-<img data-fragment-index="2" class="half fragment" src="img-ia/material_02.png"/>
-<p data-fragment-index="2" class="fragment">Paste the copied URL into the box (right click or use CTRL+v) and hit OK</p>
-
+	<p>Commands on the Fiji menu will look like: <code>[File > Save]</code></p>
+	<p>Throughtout the presentation, test data will look like this: <a href="material/01-Photo.tif"><code>01-Photo.tif</code></a></p>
+	<img data-fragment-index="1"  class="half fragment" src="img-ia/material_01.png"/>
+	<img data-fragment-index="2" class="half fragment" src="img-ia/material_02.png"/>
+	<p data-fragment-index="2" class="fragment">Paste the copied URL into the box (right click or use CTRL+v) and hit OK</p>
 </section>
 
 <section data-menu-title="How an image is formed" data-state="intro1z"><style>.intro1z header:after { content: ""; }</style>
-<h1>How an Image is formed</h1>
-<h4>Understanding digital images</h4>
+	<h1>How an Image is formed</h1>
+	<h4>Understanding digital images</h4>
 </section>
 
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<div><img  class="half" src="img-ia/scopes1.png"/>
-<img  class="half" src="img-ia/scopes2.png"/></div>
-<p>Widefield and Confocal microscopes acquire images in different ways.</p>
+	<div><img  class="half" src="img-ia/scopes1.png"/>
+	<img  class="half" src="img-ia/scopes2.png"/></div>
+	<p>Widefield and Confocal microscopes acquire images in different ways.</p>
 </section>
 
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<div><img  class="half" src="img-ia/acq_widefield.png"/>
-<img class="half fragment" src="img-ia/acq_lsm.png"/></div>
-<p>Widefield and laser-scanning microscopes acquire images in different ways.</p>
+	<div><img  class="half" src="img-ia/acq_widefield.png"/>
+	<img class="half fragment" src="img-ia/acq_lsm.png"/></div>
+	<p>Widefield and laser-scanning microscopes acquire images in different ways.</p>
 </section>
 
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<img  class="imbox" src="img-ia/detector.png"/>
-<p>Detectors collect photons and convert them to a voltage</p>
+	<img  class="imbox" src="img-ia/detector.png"/>
+	<p>Detectors collect photons and convert them to a voltage</p>
 </section>
 
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<img  class="imbox" src="img-ia/ad_1.png"/>
-<p>The A/D converter determines the dynamic range of the data</p>
+	<img  class="imbox" src="img-ia/ad_1.png"/>
+	<p>The A/D converter determines the dynamic range of the data</p>
 </section>
 
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<img  class="imbox" src="img-ia/bd1.png"/>
-<p></p>
+	<img  class="imbox" src="img-ia/bd1.png"/>
+	<p></p>
 </section>
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<img  class="imbox" src="img-ia/bd2.png"/>
-<p></p>
+	<img  class="imbox" src="img-ia/bd2.png"/>
+	<p></p>
 </section>
 <section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
-<img  class="imbox" src="img-ia/bd3.png"/>
-<p>Unless you have good reason not to, always collect data at the highest possible bit depth</p>
+	<img  class="imbox" src="img-ia/bd3.png"/>
+	<p>Unless you have good reason not to, always collect data at the highest possible bit depth</p>
+</section>
+<section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
+	<img class="imbox" src="img-ia/noise-demonstration.jpg"/>
+	<ul >
+		<p>Every image, regardless of imaging modality contains noise: </p>
+		<li>Photon noise - signal dependent, varies throughout the image</li>
+		<li>Readout noise - signal independent, depends on detector</li>
+		<li>Rule of thumb: collect more photons = noise reduction</li>
+	</ul>
+</section>
+<section data-state="intro1"><style>.intro1 header:after { content: "How an image is formed"; }</style>
+	<img class="imbox" src="img-ia/resolution-demonstration.jpg"/>
+	<p>Resolution of an optical microscope = the smallest distance between two points on a specimen that can still be distinguished as two separate entities. </p>
 </section>
 
 <section data-menu-title="Introduction to ImageJ" data-state="fijiz"><style>.fiji1z header:after { content: ""; }</style>
@@ -116,7 +136,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </ul>
 </section>
 <section data-state="fiji1"><style>.fiji1 header:after { content: "Introducing ImageJ and Fiji"; }</style>
-<img src="img-ia/bioformats.jpg"/>
+<img src="img-ia/Fiji-and-bioformats.jpg"/>
 <p>Learn more about Bio-Formats <a href="https://www.openmicroscopy.org/bio-formats/" target="_blank">here</a></p>
 </section>
 
