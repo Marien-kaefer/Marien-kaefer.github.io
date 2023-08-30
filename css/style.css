@@ -138,7 +138,7 @@ Rules for equipment page
 */
 .equThumb {border: 2px solid #dedede;border-radius: 5px;padding:5px;}
 .equThumb a,a:hover {text-decoration: none;}
-.equThumb h3 {text-align:center;text-decoration: none;color:#000;}
+.equThumb h3 {text-align:left;text-decoration: none;color:#000;}
 .equThumb img {margin:5px auto; display:block; max-width:300px; width:80%;}
 .equ_hover :hover {background:#dbe0f0;}
 /* Main image for individual equipment pages */
@@ -148,7 +148,7 @@ Rules for equipment page
 Rules for individual equipment page
 */
 
-div.equipPage h3{margin-top:30px;text-align:center;}
+div.equipPage h3{margin-top:30px;text-align:left;}
 
 div.props {
 	display:block;
@@ -157,7 +157,7 @@ div.props {
 	margin-right:auto;
 	margin-bottom:30px;
 	padding:0 0 12px 0;
-	text-align:center;
+	text-align:left;
 	}
 	div.props ul, div.props li {
 		margin:0;

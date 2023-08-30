@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fiji basics</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/academicons.min.css">
+<!-- Favicons for everyone! -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="img/icons/manifest.json">
+<link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#2d89ef">
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<meta name="msapplication-config" content="img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Common navigation bar -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="css/scripts.js"></script> 
+<!-- Juxtapose -->
+<link rel="stylesheet" href="css/juxtapose.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: poppinsregular, sans-serif}
+body {font-size:16px;text-align:justify;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navigation-bar-equipment.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<!-- Top menu on small screens -->
+<header style="cursor:pointer;cursor:hand;" class="w3-container w3-top w3-hide-large cci-blue w3-xlarge w3-padding" id="cciTopMenu>
+  <a href="javascript:void(0)" class="w3-button cci-blue w3-margin-right" onclick="w3_open()"><i class="fa fa-bars" style="margin-right:10px;"></i> <!-- <img style="height:30px;margin-bottom:-6px;" src="img/logo_dark_sq.png"/> -->
+  <span class="titleLong">Image Analysis Training Courses and more</span><span class="titleShort">Image Analysis courses</span></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="cciOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-main-cci">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px"> <!--id="showcase"-->
+  
+<div class="w3-row headImg" style="margin-bottom:40px;">
+<a href="https://somethingsomewhereallatonce.html"><img class="last" src="img/cell_icon.png"/></a>
+<img src="img/cell_icon.png"/>
+<img src="img/cell_icon.png"/>
+<img src="img/cell_icon.png"/>
+</div>
+
+<!-- --------------------------  Equipment page content ----------------------------------------- -->
+<div class="equipPage">
+<h1 class="w3-xlarge cci-text-blue"><b>Fiji Basics</b></h1>
+<hr class="cci-hr">
+
+<img class="equ_img" src="img/scopes_dragonfly.png" alt="Image?" />
+
+<div class="">
+<h3>Summary</h3>
+<p>Fiji is an open source software for processing and analysing scientific images. This course will briefly cover aspect of image formation, analysis practise and an introduction to image processing. There will be a focus on practical sessions where the participants will gain hands-on experience. </p>
+
+<h3>Target Audience</h3>
+<ul >
+	<li>All researchers using light microscopy</li>
+	<li>Those with no or limited experience in bioimage analysis</li>
+	<li class="last">Students and staff members from the universities in Liverpool, affiliated institutions and other external institutions/individuals</li>
+</ul>
+
+<h3>Pre-requisites</h3>
+<ul >
+	<li>The desire to learn about image analysis</li>
+</ul>
+
+<h3>Aims and Objectives</h3>
+<p>This course will enable participants to: </p>
+<ul>
+	<li>Describe the formation of digital microscopy images</li>
+	<li>Install Fiji and keep it up to date</li>
+	<li>Recognise common image properties</li>
+	<li>Recall where and how to access additional help in the future</li>
+	<li>Identify the place of image analysis within the experimental pipeline</li>
+	<li>Employ image adjustments and annotation tools</li>
+	<li>Explain a typical image analysis sequence</li>
+	<li>Propose image pre-processing to reduce noise and enhance features</li>
+	<li>Set up measurements</li>
+	<li>Propose an image analysis pipeline for a given task</li>
+	<li>Recreate an image analysis pipeline from the literature</li>
+	<li>Evaluate a given image analysis pipeline</li>
+	<li class="last">Recall the FAIR principle</li>
+</ul>
+
+<h3>Course Materials</h3>
+<p>This material was adapted from a course run in the CCI by David Mason in 2018:  </p>
+<ul>
+	<li>Lecture slides</li>
+	<li>Exercises</li>
+	<li>Sample Data</li>
+	<li class="last">Course work (optional though strongly encouraged)</li>
+</ul>
+
+
+<h3>Administrative Details: </h3>
+<ul>
+	<li>Duration: TBA</li>
+	<li>Pricing: TBA</li>
+</ul>
+ 
+ 
+ </div> <!-- Hide info until installed -->
+ 
+ 
+</div> <!-- close styling for equipment page -->
+<!-- --------------------------  End equipment page content ----------------------------------------- -->
+
+<!-- Footer -->
+<div class="w3-container" id="cciFooter">
+  <a target="_blank" href="http://www.liv.ac.uk"><img src="img/uni_logo_new.svg" alt="University of Liverpool" /></a>
+  
+  <p style="margin-left:5px;clear:both;">&copy; Marie Held</p>
+</div>
+
+<!-- End page content -->
+	</div>
+</div>
+
+ 
+
+ <!-- Jump to top -->
+ <div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-4x fa-arrow-circle-up" title="Back to top"></i>
+	</span>
+</div>
+<script src="css/juxtapose.js"></script> 
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("cciSidebar").style.display = "block";
+    document.getElementById("cciOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("cciSidebar").style.display = "none";
+    document.getElementById("cciOverlay").style.display = "none";
+}
+/* Accordian menu on sidenav */
+var acc = document.getElementsByClassName("sidebar-accord");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
